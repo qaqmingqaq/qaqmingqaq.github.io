@@ -9,7 +9,7 @@
     
     <title>
         
-            Links |
+            关于 |
         
         Alan
     </title>
@@ -56,41 +56,41 @@
                     
                         <li class="menu-item">
                             <a class=""
-                               href="/%E9%A6%96%E9%A1%B5"
+                               href="/"
                             >
-                                HOME
+                                主页
                             </a>
                         </li>
                     
                         <li class="menu-item">
                             <a class=""
-                               href="/%E5%BD%92%E6%A1%A3"
+                               href="/archives"
                             >
-                                ARCHIVES
+                                归档
                             </a>
                         </li>
                     
                         <li class="menu-item">
                             <a class=""
-                               href="/%E6%A0%87%E7%AD%BE"
+                               href="/tags"
                             >
-                                TAGS
+                                标签
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                友链
                             </a>
                         </li>
                     
                         <li class="menu-item">
                             <a class="active"
-                               href="/%E5%8F%8B%E9%93%BE"
+                               href="/about"
                             >
-                                LINKS
-                            </a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/%E5%85%B3%E4%BA%8E"
-                            >
-                                ABOUT
+                                关于
                             </a>
                         </li>
                     
@@ -117,27 +117,27 @@
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/%E9%A6%96%E9%A1%B5">HOME</a>
+                       href="/">主页</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/%E5%BD%92%E6%A1%A3">ARCHIVES</a>
+                       href="/archives">归档</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class=""
-                       href="/%E6%A0%87%E7%AD%BE">TAGS</a>
+                       href="/tags">标签</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links">友链</a>
                 </li>
             
                 <li class="drawer-menu-item flex-center">
                     <a class="active"
-                       href="/%E5%8F%8B%E9%93%BE">LINKS</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/%E5%85%B3%E4%BA%8E">ABOUT</a>
+                       href="/about">关于</a>
                 </li>
             
         </ul>
@@ -162,8 +162,84 @@
 
         <div class="empty-page-content markdown-body">
             
+                <p>测试内容</p>
+
+            
         </div>
         <div class="empty-page-comments">
+            
+                <div class="comments-container">
+    <div id="comment-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments">&nbsp;Comments</i>
+    </div>
+    
+        
+    <div class="valine-container">
+        <script 
+                src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script >
+            function loadValine() {
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'g72vUfdljg2mSQDpf3LPVtVG-gzGzoHsz',
+                    appKey: 'BmkUmYr5EmhIvwf64W14NzJx',
+                    meta: ['nick', 'mail', 'link'],
+                    avatar: 'wavatar',
+                    enableQQ: true,
+                    placeholder: '期待你的评论',
+                    lang: 'en'.toLowerCase()
+                });
+
+                function getAuthor(language) {
+                    switch (language) {
+                        case 'en':
+                            return 'Author';
+                        case 'zh-CN':
+                            return '博主';
+                        default:
+                            return 'Master';
+                    }
+                }
+
+                // Add "Author" identify
+                const getValineDomTimer = setInterval(() => {
+                    const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+                    if (vcards.length > 0) {
+                        let author = 'alan p';
+
+                        if (author) {
+                            for (let vcard of vcards) {
+                                const vnick_dom = vcard.querySelector('.vhead .vnick');
+                                const vnick = vnick_dom.innerHTML;
+                                if (vnick === author) {
+                                    vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                                }
+                            }
+                        }
+                        clearInterval(getValineDomTimer);
+                    } else {
+                        clearInterval(getValineDomTimer);
+                    }
+                }, 2000);
+            }
+
+            if ('false') {
+                const loadValineTimeout = setTimeout(() => {
+                    loadValine();
+                    clearTimeout(loadValineTimeout);
+                }, 1000);
+            } else {
+                window.addEventListener('DOMContentLoaded', loadValine);
+            }
+        </script>
+    </div>
+
+
+    
+</div>
+
             
         </div>
     </div>
