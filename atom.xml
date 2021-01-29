@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-01-28T13:49:51.556Z</updated>
+  <updated>2021-01-28T05:57:58.479Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Markdown语法</title>
-    <link href="http://example.com/2021/01/28/markdown%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2021/01/28/markdown%E8%AF%AD%E6%B3%95/</id>
-    <published>2021-01-28T13:48:22.785Z</published>
-    <updated>2021-01-28T13:49:51.556Z</updated>
-    
-    <content type="html"><![CDATA[<p>Markdown 是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。<br>相比 WYSIWYG 编辑器<br>优点：<br>1、因为是纯文本，所以只要支持 Markdown 的地方都能获得一样的编辑效果，可以让作者摆脱排版的困扰，专心写作。<br>2、操作简单。比如：WYSIWYG 编辑时标记个标题，先选中内容，再点击导航栏的标题按钮，选择几级标题。要三个步骤。而 Markdown 只需要在标题内容前加 #即可<br>缺点：<br>1、需要记一些语法（当然，是很简单。五分钟学会）。<br>2、有些平台不支持 Markdown 编辑模式。<br>还好，简书是支持 Markdown 编辑模式的。<br>开启方式：设置 -&gt; 默认编辑器 -&gt;Markdown 编辑器</p><p>一、标题<br>在想要设置为标题的文字前面加 #来表示<br>一个 #是一级标题，二个 #是二级标题，以此类推。支持六级标题。<br>注：标准语法一般在 #后跟个空格再写文字，貌似简书不加空格也行。<br>示例：</p><h1 id="这是一级标题"><a class="markdownIt-Anchor" href="#这是一级标题">#</a> 这是一级标题</h1><h2 id="这是二级标题"><a class="markdownIt-Anchor" href="#这是二级标题">#</a> 这是二级标题</h2><h3 id="这是三级标题"><a class="markdownIt-Anchor" href="#这是三级标题">#</a> 这是三级标题</h3><h4 id="这是四级标题"><a class="markdownIt-Anchor" href="#这是四级标题">#</a> 这是四级标题</h4><h5 id="这是五级标题"><a class="markdownIt-Anchor" href="#这是五级标题">#</a> 这是五级标题</h5><h6 id="这是六级标题"><a class="markdownIt-Anchor" href="#这是六级标题">#</a> 这是六级标题</h6><p>效果如下：<br>这是一级标题<br>这是二级标题<br>这是三级标题<br>这是四级标题<br>这是五级标题<br>这是六级标题</p><p>二、字体</p><p>加粗</p><p>要加粗的文字左右分别用两个 * 号包起来</p><p>斜体</p><p>要倾斜的文字左右分别用一个 * 号包起来</p><p>斜体加粗</p><p>要倾斜和加粗的文字左右分别用三个 * 号包起来</p><p>删除线</p><p>要加删除线的文字左右分别用两个～～号包起来<br>示例：<br><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em> `<br><em><strong> 这是斜体加粗的文字</strong></em><br><s>这是加删除线的文字</s></p><p>效果如下：<br>这是加粗的文字<br>这是倾斜的文字<br>这是斜体加粗的文字<br>这是加删除线的文字</p><p>三、引用<br>在引用的文字前加 &gt; 即可。引用也可以嵌套，如加两个 &gt;&gt; 三个 &gt;&gt;&gt;<br>n 个…<br> 貌似可以一直加下去，但没神马卵用<br>示例：</p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><p>效果如下：</p><p>这是引用的内容</p><p>这是引用的内容</p><p>这是引用的内容</p><h2 id="四-分割线三个或者三个以上的-或者-都可以-示例"><a class="markdownIt-Anchor" href="#四-分割线三个或者三个以上的-或者-都可以-示例">#</a> 四、分割线<br>三个或者三个以上的 - 或者 * 都可以。<br>示例：</h2><hr><hr><hr><p>效果如下：<br>可以看到，显示效果是一样的。</p><p>五、图片<br>语法：<br>![图片 alt](图片地址 ‘‘图片 title’’)</p><p>图片 alt 就是显示在图片下面的文字，相当于对图片内容的解释。<br>图片 title 是图片的标题，当鼠标移到图片上时显示的内容。title 可加可不加</p><p>示例：<br>![blockchain](<a class="link"   href="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/" >https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/<i class="fas fa-external-link-alt"></i></a><br>u=702257389,1274025419&amp;fm=27&amp;gp=0.jpg “区块链”)</p><p>效果如下：</p><p>blockchain</p><p>上传本地图片直接点击导航栏的图片标志，选择图片即可<br> markdown 格式追求的是简单、多平台统一。那么图片的存储就是一个问题，需要用图床，提供统一的外链，这样就不用在不同的平台去处理图片的问题了。才能做到书写一次，各处使用。<br>关于图床的选择我写了一篇文章，对网上存在的各种方法做了总结，需要的朋友可以看看。markdown 图床<br>六、超链接<br>语法：<br><a href="%E8%B6%85%E9%93%BE%E6%8E%A5%E5%9C%B0%E5%9D%80" title="超链接title">超链接名</a><br> title 可加可不加</p><p>示例：<br><a class="link"   href="http://jianshu.com" >简书<i class="fas fa-external-link-alt"></i></a><br><a class="link"   href="http://baidu.com" >百度<i class="fas fa-external-link-alt"></i></a></p><p>效果如下：<br>简书<br>百度<br>注：Markdown 本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用 html 语言的 a 标签代替。<br><a href="超链接地址" target="_blank">超链接名</a></p><p>示例<br><a class="link"   href="https://www.jianshu.com/u/1f5ac0cf6a8b"  target="_blank">简书<i class="fas fa-external-link-alt"></i></a></p><p>七、列表<br>无序列表<br>语法：<br>无序列表用 - + * 任何一种都可以</p><ul><li>列表内容</li></ul><ul><li>列表内容</li></ul><ul><li>列表内容</li></ul><p>注意：- + * 跟内容之间都要有一个空格</p><p>效果如下：</p><p>列表内容<br>列表内容<br>列表内容</p><p>有序列表<br>语法：<br>数字加点</p><ol><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol><p>注意：序号跟内容之间要有空格</p><p>效果如下：</p><p>列表内容<br>列表内容<br>列表内容</p><p>列表嵌套<br>上一级和下一级之间敲三个空格即可</p><p>一级无序列表内容</p><p>二级无序列表内容<br>二级无序列表内容<br>二级无序列表内容</p><p>一级无序列表内容</p><p>二级有序列表内容<br>二级有序列表内容<br>二级有序列表内容</p><p>一级有序列表内容</p><p>二级无序列表内容<br>二级无序列表内容<br>二级无序列表内容</p><p>一级有序列表内容</p><p>二级有序列表内容<br>二级有序列表内容<br>二级有序列表内容</p><p>八、表格<br>语法：</p><table><thead><tr><th>表头</th><th style="text-align:center">表头</th><th style="text-align:right">表头</th></tr></thead><tbody><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr></tbody></table><p>第二行分割表头和内容。</p><ul><li>有一个就行，为了对齐，多加了几个<br>文字默认居左<br> - 两边加：表示文字居中<br> - 右边加：表示文字居右<br>注：原生的语法两边都要用 | 包起来。此处省略</li></ul><p>示例：</p><table><thead><tr><th>姓名</th><th style="text-align:center">技能</th><th style="text-align:right">排行</th></tr></thead><tbody><tr><td>刘备</td><td style="text-align:center">哭</td><td style="text-align:right">大哥</td></tr><tr><td>关羽</td><td style="text-align:center">打</td><td style="text-align:right">二哥</td></tr><tr><td>张飞</td><td style="text-align:center">骂</td><td style="text-align:right">三弟</td></tr></tbody></table><p>效果如下：</p><p>姓名<br>技能<br>排行</p><p>刘备<br>哭<br>大哥</p><p>关羽<br>打<br>二哥</p><p>张飞<br>骂<br>三弟</p><p>九、代码<br>语法：<br>单行代码：代码之间分别用一个反引号包起来<br> <code>代码内容</code></p><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行<br> ( <code>)   代码...   代码...   代码... (</code> )</p><p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p><p>示例：<br>单行代码<br> <code>create database hero;</code></p><p>代码块<br> ( <code>)     function fun()&#123;          echo &quot;这是一句非常牛逼的代码&quot;;     &#125;     fun(); (</code> )</p><p>效果如下：<br>单行代码<br> create database hero;<br> 代码块<br> function fun (){<br>echo “这是一句非常牛逼的代码”;<br>}<br>fun();</p><p>十、流程图</p><figure class="highlight flow"><figcaption data-lang="flow"></figcaption><table><tr><td data-num="1"></td><td><pre>st<span class="token operator">=></span>start<span class="token operator">:</span> 开始</pre></td></tr><tr><td data-num="2"></td><td><pre>op<span class="token operator">=></span>operation<span class="token operator">:</span> My Operation</pre></td></tr><tr><td data-num="3"></td><td><pre>cond<span class="token operator">=></span>condition<span class="token operator">:</span> Yes or No<span class="token operator">?</span></pre></td></tr><tr><td data-num="4"></td><td><pre>e<span class="token operator">=></span>end</pre></td></tr><tr><td data-num="5"></td><td><pre>st<span class="token operator">-</span><span class="token operator">></span>op<span class="token operator">-</span><span class="token operator">></span>cond</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token function">cond</span><span class="token punctuation">(</span>yes<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>e</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token function">cond</span><span class="token punctuation">(</span>no<span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>op</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token operator">&amp;</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token template-punctuation string">`</span></span>`</pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre>效果如下：</pre></td></tr><tr><td data-num="11"></td><td><pre>简书不支持流程图，所以截了个图</pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre>作者：高鸿祥</pre></td></tr><tr><td data-num="14"></td><td><pre>链接：https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>jianshu<span class="token punctuation">.</span>com<span class="token operator">/</span>p<span class="token operator">/</span><span class="token number">191</span>d1e21f7ed<span class="token operator">/</span></pre></td></tr><tr><td data-num="15"></td><td><pre>来源：简书</pre></td></tr><tr><td data-num="16"></td><td><pre>简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。</pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Markdown 是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。&lt;br&gt;
-相比 WYSIWYG 编辑器&lt;br&gt;
-优点：&lt;br&gt;
-1、因为是纯文本，所以只要支持 Markdown 的地方都能获得一样的编辑效果，可以让作者摆脱排版的困扰，专</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title></title>
@@ -54,49 +31,6 @@
     <summary type="html">&lt;h2 id=&quot;文章测试&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#文章测试&quot;&gt;#&lt;/a&gt; 文章测试&lt;/h2&gt;
 &lt;p&gt;“红色代表 v 还不都是吧 v 和 v 吧 v 把开始吧”&lt;/p&gt;
 </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://example.com/2021/01/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://example.com/2021/01/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
-    <published>2021-01-28T04:52:08.506Z</published>
-    <updated>2021-01-28T04:53:42.962Z</updated>
-    
-    <content type="html"><![CDATA[<hr><h2 id="第一章"><a class="markdownIt-Anchor" href="#第一章">#</a> 第一章</h2><h2 id="内容"><a class="markdownIt-Anchor" href="#内容">#</a> 内容</h2><h2 id="第二章"><a class="markdownIt-Anchor" href="#第二章">#</a> 第二章</h2><h2 id="内容-2"><a class="markdownIt-Anchor" href="#内容-2">#</a> 内容</h2><h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献">#</a> 参考文献</h2><p><a class="link"   href="http://www.ovoming.com" >www.ovoming.com<i class="fas fa-external-link-alt"></i></a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;hr&gt;
-&lt;h2 id=&quot;第一章&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#第一章&quot;&gt;#&lt;/a&gt; 第一章&lt;/h2&gt;
-&lt;h2 id=&quot;内容&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#内容&quot;&gt;#&lt;/a&gt; 内容&lt;/h2&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2021/01/28/hello-world/"/>
-    <id>http://example.com/2021/01/28/hello-world/</id>
-    <published>2021-01-28T04:44:06.977Z</published>
-    <updated>2021-01-28T04:44:06.977Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p><h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start">#</a> Quick Start</h2><h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post">#</a> Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p><h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server">#</a> Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p><h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files">#</a> Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p><h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites">#</a> Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a class=&quot;link&quot;   href=&quot;https://hexo.io/&quot; &gt;Hexo&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;! This is your very first post. Che</summary>
       
     
     
